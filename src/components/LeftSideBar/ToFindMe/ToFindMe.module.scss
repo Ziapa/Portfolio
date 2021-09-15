@@ -1,0 +1,28 @@
+.toFindMe {
+
+  .img {
+    width: 150px;
+    height: 150px;
+  }
+  h4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: inherit;
+
+    transition: all 400ms ease-in 0s;
+    a {
+      color: #2b2b2b;
+      text-decoration: none;
+    }
+
+  }
+  h5 {
+    color: #2b2b2b;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.5;
+  }
+}
