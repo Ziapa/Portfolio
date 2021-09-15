@@ -1,5 +1,6 @@
 import React from "react";
 import s from './SkillBlock.module.scss';
+import {Border} from "../../GeneralComponents/Border/Border";
 
 export const SkillBlock = () => {
 
@@ -29,6 +30,8 @@ export const SkillBlock = () => {
                     </div>)
             })
         }
+
+        <Border/>
 
 
     </div>)
