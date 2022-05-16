@@ -1,10 +1,5 @@
-import React from "react";
+import React from 'react';
+
 import s from './NavBar.module.scss';
 
-export const NavBar = () => {
-    return( <div className={s.wrapperSideBar}>
-NavBar
-    </div>)
-
-
-}
+export const NavBar: React.FC<any> = () => <div className={s.wrapperSideBar}>NavBar</div>;

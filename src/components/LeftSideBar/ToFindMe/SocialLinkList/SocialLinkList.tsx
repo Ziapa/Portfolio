@@ -1,29 +1,23 @@
-import React from "react";
-import s from "./SocialLinkList.module.scss"
-import instagram from "../../../../assets/instagram.svg"
-import vk from "../../../../assets/vk.svg"
-import whatsApp from "../../../../assets/whatsapp.svg"
+import React from 'react';
 
+import instagram from '../../../../assets/instagram.svg';
+import vk from '../../../../assets/vk.svg';
+import whatsApp from '../../../../assets/whatsapp.svg';
+
+import s from './SocialLinkList.module.scss';
 
 const links = [
-    {svg: instagram, link: "https://www.instagram.com/ziapa14/"},
-    {svg: vk, link: "https://vk.com/ziapaa"},
-    {svg: whatsApp, link: "https://wa.me/79107193719"}
-]
+  { id: 1, svg: instagram, link: 'https://www.instagram.com/ziapa14/' },
+  { id: 2, svg: vk, link: 'https://vk.com/ziapaa' },
+  { id: 3, svg: whatsApp, link: 'https://wa.me/79107193719' },
+];
 
-export const SocialLinkList = () => {
-
-    return (<div className={s.socialLinkList}>
-
-        {links.map(el => {
-            return (
-                <a  href={el.link}>
-                    <img src={el.svg} alt=""/>
-                </a>
-            )
-        })}
-
-    </div>)
-
-
-}
+export const SocialLinkList: React.FC<any> = () => (
+  <div className={s.socialLinkList}>
+    {links.map(({ id, svg, link }) => (
+      <a key={id} href={link}>
+        <img src={svg} alt="" />
+      </a>
+    ))}
+  </div>
+);

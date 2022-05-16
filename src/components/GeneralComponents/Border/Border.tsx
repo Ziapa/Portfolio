@@ -1,10 +1,5 @@
-import React from "react";
-import s from "./Border.module.scss"
+import React from 'react';
 
-export const Border = () => {
-    return( <div className={s.border} >
+import s from './Border.module.scss';
 
-    </div>)
-
-
-}
+export const Border: React.FC<any> = () => <div className={s.border} />;

@@ -1,23 +1,19 @@
-import React from "react";
+import React from 'react';
+
+import { Border } from '../GeneralComponents/Border/Border';
+
 import s from './LeftSideBar.module.scss';
-import {ToFindMe} from "./ToFindMe/ToFindMe";
-import {Border} from "../GeneralComponents/Border/Border";
-import {SkillBlock} from "./SkillBlock/SkillBlock";
+import { SkillBlock } from './SkillBlock/SkillBlock';
+import { ToFindMe } from './ToFindMe/ToFindMe';
 
-export const LeftSideBar = () => {
+export const LeftSideBar: React.FC<any> = () => (
+  <div className={s.leftSideBar}>
+    <ToFindMe />
 
+    <Border />
 
-    return (<div className={s.leftSideBar}>
+    <SkillBlock />
 
-        <ToFindMe/>
-
-        <Border/>
-
-        <SkillBlock/>
-
-        <button>HIRE ME</button>
-
-    </div>)
-
-
-}
+    <button type="button">HIRE ME</button>
+  </div>
+);
